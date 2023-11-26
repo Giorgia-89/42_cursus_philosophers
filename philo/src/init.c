@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/26 09:28:52 by gd-innoc          #+#    #+#             */
-/*   Updated: 2023/11/26 10:50:49 by gd-innoc         ###   ########.fr       */
+/*   Created: 2023/11/26 11:42:48 by gd-innoc          #+#    #+#             */
+/*   Updated: 2023/11/26 11:42:54 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,6 @@ void	set_args(int argc, char **argv, t_data *data)
 		data->n_meals = ft_atoi(argv[5]);
 	else
 		data->n_meals = -1;
-	if (data->time_to_eat > data->time_to_die)
-		data->time_to_eat = data->time_to_die;
 }
 
 void	init_data(t_data *data)
